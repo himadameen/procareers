@@ -3,12 +3,12 @@ import ChildA from "./ChildA";
 
 const dataContext = createContext();
 
-const Context = ({children}) => {
+const Context = () => {
     const [data, setData] = useState([]);
     return (
         <>
             <dataContext.Provider value={{ data, setData}}>
-                <ChildA />{children}
+                <ChildA />
             </dataContext.Provider>
         </>
     )
