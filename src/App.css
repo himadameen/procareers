@@ -1,38 +1,125 @@
-.App {
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;;
+}
+
+/* ChildA */
+
+.childA{
+  background: lavender;
+}
+
+.childA h1{
   text-align: center;
+  padding-top: 20px;
+  margin-bottom: 10px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.childA h1 span{
+  color: purple;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.childA .btn{
+   display: flex;
+   width: 100%;
+   justify-content: space-around;
+   align-items: center;
+   margin-top: 20px;
+   padding-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.childA .btn button{
+  padding: 10px 9px;
+  border: none;
+  border-radius: 1rem;
+  letter-spacing: 1px;
+  color: black;
+  background-color: lavenderblush;
+ cursor: pointer;
+}
+
+.childA .btn button:hover{
   color: white;
+  background-color: black;
 }
 
-.App-link {
-  color: #61dafb;
+/* ChildB */
+
+.full{
+  width: 100%;
+  height: 100vh;
+  background: #f8f9fa;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.full .head{
+  margin-bottom: 30px;
+}
+
+.full .head h1{
+  padding-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.full .head h1 span{
+  color: purple;
+}
+
+
+.full .data{
+  margin: auto;
+  max-width: 75%;
+}
+
+.full .data .dataHead{
+  border-bottom: 2px solid #767687;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-around;
+}
+
+.full .data .dataDetails{
+  display: flex;
+  border-bottom: 1px solid grey;
+  font-size: 15px;
+  font-style: oblique;
+}
+
+.full .data .dataDetails #name{
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 23%;
+ text-align: center;
+}
+
+.full .data .dataDetails #c-price{
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 26%;
+ text-align: center;
+}
+
+.full .data .dataDetails #percent{
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 26%;
+ text-align: center;
+}
+
+.full .data .dataDetails #rank{
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 25%;
+ text-align: center;
 }
